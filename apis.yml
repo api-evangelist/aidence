@@ -1,8 +1,29 @@
 aid: aidence
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aidence.png
 name: Aidence
-description: 'Aidence is a company surfaced as a portfolio company of northzone and added to the API Evangelist
-  network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Aidence is a radiology AI company founded in Amsterdam in 2015 that builds
+  clinical AI for the lung cancer pathway. Its flagship product, Veye Lung
+  Nodules (now DeepHealth Lung), is a CE-marked AI solution that detects,
+  classifies, quantifies, and measures growth of pulmonary nodules on chest CT
+  scans, and is the AI of choice in NHS England's Targeted Lung Health Checks
+  screening programme. Aidence was acquired by RadNet in 2022 and now operates
+  under the DeepHealth brand; aidence.com redirects to deephealth.com/aidence.
+  The product integrates with hospital systems over DICOM/PACS via the Veye
+  Engine rather than a public developer REST API — no public API, developer
+  portal, or SDKs are published. This profile captures the company's identity
+  plus its probed security and disclosure posture.
 url: https://raw.githubusercontent.com/api-evangelist/aidence/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +31,19 @@ x-backed-by:
 - northzone
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-operating-as: DeepHealth (RadNet subsidiary)
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
 - Healthcare
+- Artificial Intelligence
+- Radiology
+- Medical Imaging
+- Lung Cancer Screening
+- Clinical Decision Support
+- DICOM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +52,37 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://aidence.com
+  url: https://www.aidence.com
+- type: Website
+  name: DeepHealth (operating brand)
+  url: https://deephealth.com/aidence/
+- type: PrivacyPolicy
+  url: https://deephealth.com/privacy-policy/
+- type: TermsOfService
+  url: https://deephealth.com/terms-of-service/
+- type: Support
+  url: https://deephealth.com/contact/
+- type: Blog
+  name: DeepHealth press releases
+  url: https://deephealth.com/press-releases/
+- type: WellKnown
+  url: well-known/aidence-well-known.yml
+- type: SecurityTxt
+  url: well-known/aidence-security.txt
+- type: DomainSecurity
+  url: security/aidence-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/aidence-vulnerability-disclosure.yml
+- type: Security
+  name: Responsible disclosure (security.txt + Inspectiv bug bounty)
+  url: https://deephealth.com/.well-known/security.txt
+- type: TrustCenter
+  url: security/aidence-trust-center.yml
+- type: Trust
+  name: DeepHealth Trust Center
+  url: https://trust.deephealth.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

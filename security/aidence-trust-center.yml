@@ -1,0 +1,17 @@
+generated: '2026-07-17'
+method: searched
+probe: true
+url: https://trust.deephealth.com/
+platform: Vanta
+note: >-
+  Aidence operates as DeepHealth (RadNet); the Trust Center is published on the
+  deephealth.com parent brand at trust.deephealth.com. The page is a
+  Vanta-hosted trust center (verified 200, Vanta application markup). Specific
+  named certifications are rendered client-side and were not machine-extractable
+  in this pass, so certifications is left empty rather than fabricated — curate
+  from the live Trust Center on a follow-up.
+certifications: []
+evidence:
+- source: https://trust.deephealth.com/
+  kind: trust-center
+  detail: Vanta-hosted DeepHealth Trust Center (data-environment=prod Vanta markup)

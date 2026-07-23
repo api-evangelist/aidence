@@ -1,0 +1,20 @@
+generated: '2026-07-17'
+method: searched
+source: live probe of /.well-known/ on the operating host
+note: >-
+  aidence.com (and all www.aidence.com paths) 301-redirect to
+  deephealth.com/aidence; Aidence now operates as DeepHealth, a RadNet
+  subsidiary. The well-known surface therefore lives on deephealth.com.
+host: https://deephealth.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: aidence-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
