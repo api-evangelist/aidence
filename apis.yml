@@ -62,6 +62,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/radnet/
+  name: RadNet
+  x-relationship: acquired
+  x-evidence: "Aidence was acquired by RadNet in 2022 and now operates under the DeepHealth brand; aidence."
 - type: Website
   url: https://www.aidence.com
 - type: Website
